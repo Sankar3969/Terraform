@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../vpc_creation/vpc"
+  source = "git::https://github.com/Sankar3969/Terraform.git?ref=main"
   cidr_block  = var.cidr_block
   instance_tenancy = var.instance_tenancy
   int_gtw_tag      = var.int_gtw_tag
